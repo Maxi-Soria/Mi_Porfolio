@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=M+PLUS+Rounded+1c:wght@300;400;500;800&family=Spicy+Rice&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* SECCION INICIO*/
+.inicio{
+    background: linear-gradient(to left, #01844b, #0c5563); 
+    /*clip-path: polygon(100% 0, 100% 68%, 84% 77%, 0 69%, 0 0);*/
+    height: 110vh;
+    padding: 0 60px;
+}
+.inicio .contenido{
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+.inicio header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+} 
+.inicio .logo{
+    display: flex;
+    align-items: center;
+    color: #777e08;
+    font-size: 25px;
+}
+.inicio .logo i{
+    display: inline-block;
+    margin-right: 20px;
+}
+#inicio header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+#inicio header nav a:hover{
+    border-bottom: 2px solid #161b4f;
+}
+.inicio .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.inicio .redes a:hover{
+    color: #c16a19;
+}
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.inicio .fila .col{
+    width: 50%;
+}
+.inicio .fila .col h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.inicio .fila .col p{
+    margin-bottom: 20px;
+
+}
+.inicio .fila .col .contenedor-img{
+    max-width: 400px;
+    margin:auto;
+}
+
+.inicio .fila .col .contenedor-img{
+    width: 100px;
+    margin-top: -145px;
+}
+.inicio .fila .col button{
+    background: none;
+    width: fit-content;
+    padding:  5px 40px;
+    border: 2px solid #c16a19;
+    color: #fff;
+    background: linear-gradient(to right, #c16a19, #b8c46c );
+    transition: .5s;
+    cursor: pointer;
+}
+.inicio .fila .col button:hover{
+    transform: scale(1.1);
+}
+#icono-nav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+#icono-nav:hover{
+    background-color: #363b80;
+}
+.sombra{
+    filter: drop-shadow(0em 30px 20px #98b0ed);
+}
+
+/*Seccion ESTUDIOS*/
+.estudios{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    top: -170px;
+}
+.estudios .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 76px;
+}
+.estudios .fila .col{
+    text-align: center;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
