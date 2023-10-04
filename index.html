@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="estilo.css" />
     <title>Maxi Soria</title>
   </head>
@@ -57,8 +57,9 @@
             </div>
             <div class="col">
               <div class="contenedor-img">
-                <img src="img/foto-inicio.png" class="imagen-achicada" />
-              </div>
+                <img src="img/foto-inicio.png" id="imagen1" class="imagen">
+                <img src="img/foto-inicio2.png" id="imagen2" class="oculta">
+            </div>
             </div>
           </div>
         </div>
@@ -119,24 +120,132 @@
             <a href="#">Leer Más</a>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <div class="icono color3">
-              <div class="circulo">
-                <i class="fa-solid fa-code"></i>
+      </div>
+    </section>
+
+    <!--seccion HABILIDADES-->
+    <section class="habilidades" id="habilidades">
+      <div class="contenedor-habi">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <!--**********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="25">
+                  25%
+                </div>
+                <h2>Git & GitHub</h2>
               </div>
             </div>
-            <h3>Autodidacta</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim
-              eaque eum, exercitationem sequi voluptas blanditiis voluptatem
-              ipsum ratione itaque voluptate! Error neque earum minima pariatur
-              veniam sit accusantium ad!
-            </p>
-            <a href="#">Leer Más</a>
           </div>
+          <!--********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="30">
+                  30%
+                </div>
+                <h2>Java</h2>
+              </div>
+            </div>
+          </div>
+          <!--********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="10">
+                  15%
+                </div>
+                <h2>MySQL</h2>
+              </div>
+            </div>
+          </div>
+           <!--********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="10">
+                  10%
+                </div>
+                <h2>React Js</h2>
+              </div>
+            </div>
+          </div> 
+           <!--********************-->
+           <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="10">
+                  10%
+                </div>
+                <h2>HTML & Css</h2>
+              </div>
+            </div>
+          </div>     
+        </div>
+        <!--**************************************************************-->
+        <div class="fila">
+          <!--**********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="20">
+                  20%
+                </div>
+                <h2>FireBase</h2>
+              </div>
+            </div>
+          </div>
+          <!--********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="10">
+                  40%
+                </div>
+                <h2>C++</h2>
+              </div>
+            </div>
+          </div>
+          <!--********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="15">
+                  15%
+                </div>
+                <h2>C#</h2>
+              </div>
+            </div>
+          </div> 
+          <!--********************-->
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="10">
+                  10%
+                </div>
+                <h2>SQL Server</h2>
+              </div>
+            </div>
+          </div> 
+           <!--********************-->
+           <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="10">
+                  25%
+                </div>
+                <h2>Boostrap </h2>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
     </section>
+
+    <!--Inclusion de la hoja script-->
+    <script src="app.js"></script>
   </body>
 </html>

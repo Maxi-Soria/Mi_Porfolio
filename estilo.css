@@ -13,7 +13,6 @@ html{
 /* SECCION INICIO*/
 .inicio{
     background: linear-gradient(to left, #01844b, #0c5563); 
-    /*clip-path: polygon(100% 0, 100% 68%, 84% 77%, 0 69%, 0 0);*/
     height: 110vh;
     padding: 0 60px;
 }
@@ -82,6 +81,11 @@ html{
 .inicio .fila .col .contenedor-img{
     width: 100px;
     margin-top: -100px;
+    cursor: pointer;
+}
+.contenedor-img .oculta{
+    display: none;
+
 }
 .inicio .fila .col button{
     background: none;
@@ -112,8 +116,23 @@ html{
 .sombra{
     filter: drop-shadow(0em 30px 20px #98b0ed);
 }
+.oculto {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#imagen {
+    cursor: pointer;
+}
+
 
 /*Seccion ESTUDIOS*/
+
 .estudios{
     max-width: 1100px;
     margin: auto;
@@ -129,11 +148,109 @@ html{
 }
 .estudios .fila .col{
     text-align: center;
-    width: 40%;
+    width: 30%;
+}
+.estudios .fila .col .card{
+    border: 1px solid #b8c46c;
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.estudios .icono{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.estudios .icono .circulo{
+    width: 92%;
+    height: 90%;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.color1{
+    background: linear-gradient(#161b4f, #98b0ed);
+}
+.color2{
+    background: linear-gradient(#a60b0b, #f79250);
+}
+.color3{
+    background: linear-gradient(#053711, #65d34f);
+}
+.estudios h3{
+    margin-bottom: 20px;
+}
+.estudios .card p{
+    color: #161b4f;
+    line-height: 28px;
+    font-size: 13px;
+}
+.estudios .card a{
+    text-decoration: none;
+    color: #008cff;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translate(-50);
 }
 
+/* seccion HABILIDADES */
+.habilidades{
+    background: linear-gradient(to right, #130b86, #49476d);
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    top: -100px;
+}
+.habilidades h2{
+    text-align: center;
+}
+.habilidades .contenedor-habi{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin: auto 0;
+}
+.score .box{
+    width: 100%;
+}
+.score .box h2{
+    display: block;
+    text-align: center;
+}
+.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}
 
-
+/*Esto se genera dinamicamente por la libreria para graficos*/
+.score .box canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
